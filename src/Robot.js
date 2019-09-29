@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
-require('./cuadro.css');
 
+require('./cuadro.css');
+// eslint-disable-next-line react/prefer-stateless-function
 export default class Robot extends Component {
-  render(){
+  render() {
     return (
-        <img src='https://duckduckgo.com/assets/onboarding/robot-icon-frameless.svg' className="imagenRobot"></img>
+      <img
+        src="https://duckduckgo.com/assets/onboarding/robot-icon-frameless.svg"
+        className="imagenRobot"
+        alt="robot"
+      />
     );
   }
 }

@@ -1,22 +1,23 @@
 import React from 'react';
-import Title from './title/index.js';
-import Robot from './Robot.js';
-import DataInfo from './DataInfo.js';
-import DiscButton from './button-dist/index.js';
-require('./cuadro.css');
+import Title from './title/index';
+import Robot from './Robot';
+import DataInfo from './DataInfo';
+import DiscButton from './button-dist/index';
 
-export default class Cuadro extends React.Component{
-  render(){
-    return(
-      <div class="cuadro">
-        <div class="imagen">
-            <Robot />
-            <Title />
-            <DataInfo />
-            <DiscButton />
-            
+require('./cuadro.css');
+// eslint-disable-next-line react/prefer-stateless-function
+export default class Cuadro extends React.Component {
+  render() {
+    return (
+      <div className="cuadro">
+        <div className="imagen">
+          <Robot />
+          <Title />
+          <DataInfo />
+          <DiscButton />
+
         </div>
-    </div>
-    )
+      </div>
+    );
   }
 }

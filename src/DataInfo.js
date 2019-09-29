@@ -1,8 +1,8 @@
 
 import React, { Component } from 'react';
-
+// eslint-disable-next-line react/prefer-stateless-function
 export default class DataInfo extends Component {
-  render () {
+  render() {
     return (
       <ol>
         <li>Block advertising trackers.</li>
